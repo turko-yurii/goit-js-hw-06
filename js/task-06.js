@@ -6,7 +6,7 @@ function validData(event) {
   inputEl.classList.remove('valid');
   inputEl.classList.remove('invalid');
 
-  inputEl.getAttribute('data-length') == event.currentTarget.value.length
+  inputEl.getAttribute('data-length') === event.currentTarget.value.trim.length
     ? inputEl.classList.add('valid')
     : inputEl.classList.add('invalid');
 }
